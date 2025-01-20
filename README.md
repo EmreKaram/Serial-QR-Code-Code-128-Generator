@@ -41,4 +41,4 @@ After opening the project in Xcode, follow these steps to build and use the app:
 This application is compatible with **macOS 15 (Sequoia)** and later. 
 
 ## Screenshots  
-![App Screenshot](path_to_screenshot.png)  
+![App Screenshot](app-photo.png)  
