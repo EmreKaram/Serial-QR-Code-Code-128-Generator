@@ -50,4 +50,4 @@ All codes are saved in the `Downloads` folder under format-specific directories 
 This application is compatible with **macOS 15 (Sequoia)** and later.(maybe you can change it from settings I didn't try it) 
 
 ## Screenshots  
-![App Screenshot](app-photo.png)  
+![App Screenshot](app_photo.png)  
