@@ -14,10 +14,21 @@ Generate codes in bulk by providing a start and end range. The app automatically
 - `ProductName_128` for Code 128 Barcodes  
 
 ### ‼️ Important Note  
-After opening the project in Xcode, follow these steps to build and use the app:  
-1. Go to **Product** → **Archive** → **Distribute App**.  
-2. Choose **Custom** → **Copy App** → **Export**.  
-3. Move the exported `.app` file into your Mac's Applications folder. 
+#### Download the Project:
+1. After downloading the project, navigate to the **QRCodeGenerator** folder.
+2. Open the **QRCodeGenerator App**.
+3. Move the app to the **Applications** folder on your computer.
+
+#### Or if you want to apply changes:
+
+After opening the project in Xcode, follow these steps to build and use the app:
+
+1. Go to **Product** in the menu bar.
+2. Select **Archive**.
+3. Click on **Distribute App**.
+4. Choose **Custom** and then select **Copy App**.
+5. Click **Export**.
+6. Move the exported `.app` file to your Mac's **Applications** folder.
 
 ### For example, if you enter:
 - **Product Name**: MyProduct
