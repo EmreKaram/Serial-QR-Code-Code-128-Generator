@@ -13,6 +13,25 @@ Generate codes in bulk by providing a start and end range. The app automatically
 - `ProductName_qr` for QR Codes  
 - `ProductName_128` for Code 128 Barcodes  
 
+### ‼️ Important Note  
+After opening the project in Xcode, follow these steps to build and use the app:  
+1. Go to **Product** → **Archive** → **Distribute App**.  
+2. Choose **Custom** → **Copy App** → **Export**.  
+3. Move the exported `.app` file into your Mac's Applications folder. 
+
+### For example, if you enter:
+- **Product Name**: MyProduct
+- **Start Number**: 1
+- **End Number**: 5
+- **Delimiter**: -
+  
+The application will generate the following files in the Downloads folder:
+1. MyProduct-0001_qr.png
+2. MyProduct-0002_qr.png
+3. MyProduct-0003_qr.png
+4. MyProduct-0004_qr.png
+5. MyProduct-0005_qr.png
+
 ### 📂 Smart File Management  
 All codes are saved in the `Downloads` folder under format-specific directories for easy access and organization.  
 
@@ -26,19 +45,9 @@ All codes are saved in the `Downloads` folder under format-specific directories 
 - **Core Image Filters**: Used for QR Code and barcode generation with customizable styles.  
 - **macOS Native APIs**: `FileManager` for file handling, `NSWorkspace` for opening directories.  
 
-## How to Use  
-1. Clone the repository and run the project on macOS.  
-2. Enter the **Product Name**, **Start Number**, and **End Number**.  
-3. Select the desired format (QR Code or Code 128).  
-4. Click **Generate** and let the app do the rest!
+ 
 
-### ‼️ Important Note  
-After opening the project in Xcode, follow these steps to build and use the app:  
-1. Go to **Product** → **Archive** → **Distribute App**.  
-2. Choose **Custom** → **Copy App** → **Export**.  
-3. Move the exported `.app` file into your Mac's Applications folder.  
-
-This application is compatible with **macOS 15 (Sequoia)** and later. 
+This application is compatible with **macOS 15 (Sequoia)** and later.(maybe you can change it from settings I didn't try it) 
 
 ## Screenshots  
 ![App Screenshot](app-photo.png)  
