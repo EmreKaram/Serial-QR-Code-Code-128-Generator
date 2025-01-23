@@ -5,8 +5,23 @@ A powerful macOS application built with SwiftUI that allows users to generate hi
 ## Features
 
 ### 🛠 Flexible Code Formats  
-- **QR Codes**: Black foreground with a transparent background for seamless integration into any design.  
-- **Code 128 Barcodes**: Industry-standard barcodes for robust and reliable use.  
+- **Multiple Code Formats**: Generate either QR codes or Code 128 barcodes.
+- **Customizable Range**: Specify a range of numbers to create multiple codes in one go.
+- **Text Delimiter**: Add a custom delimiter (e.g., `-`, `_`, `/`) between the product name and the number in the code.
+- **White QR Code Option**: Toggle between black and white QR codes.
+- **Batch Export**: Codes are exported as PNG files in a dedicated folder within the `Downloads` directory.
+- **Text on Barcode**: Displays text below the Code 128 barcodes for added clarity. 
+
+## How to Use
+1.	Enter the Product Name in the provided text field.
+2.	Specify the Start Number and End Number for the numeric range.
+3.	Add a Delimiter (e.g., -, _, /) if desired.
+4.	Select the Code Format (QR Code or Code 128).
+5.	[Optional] If generating QR codes, toggle the Use White QR Code option to create white codes.
+6.	Click the Generate button. The app will:
+- Create a folder in your Downloads directory named after your product and code format.
+-	Generate PNG images for each code in the specified range.
+-	Automatically open the folder upon completion.
 
 ### ⚡ Batch Generation  
 Generate codes in bulk by providing a start and end range. The app automatically organizes your files into corresponding folders:  
@@ -30,19 +45,6 @@ After opening the project in Xcode, follow these steps to build and use the app:
 5. Click **Export**.
 6. Move the exported `.app` file to your Mac's **Applications** folder.
 
-### For example, if you enter:
-- **Product Name**: MyProduct
-- **Start Number**: 1
-- **End Number**: 5
-- **Delimiter**: -
-  
-The application will generate the following files in the Downloads folder:
-1. MyProduct-0001_qr.png
-2. MyProduct-0002_qr.png
-3. MyProduct-0003_qr.png
-4. MyProduct-0004_qr.png
-5. MyProduct-0005_qr.png
-
 ### 📂 Smart File Management  
 All codes are saved in the `Downloads` folder under format-specific directories for easy access and organization.  
 
@@ -55,8 +57,6 @@ All codes are saved in the `Downloads` folder under format-specific directories 
 - **SwiftUI**: Provides a sleek, native macOS interface.  
 - **Core Image Filters**: Used for QR Code and barcode generation with customizable styles.  
 - **macOS Native APIs**: `FileManager` for file handling, `NSWorkspace` for opening directories.  
-
- 
 
 This application is compatible with **macOS 15 (Sequoia)** and later.(maybe you can change it from settings I didn't try it) 
 
